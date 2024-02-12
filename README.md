@@ -1,16 +1,30 @@
-# ostello_assignment
+# Ostello_Assignment
 
-A new Flutter project.
+First Screen:
 
-## Getting Started
+The first screen contains a button and a label.
+It also includes components:
+Widgets: Various widgets are used, including bulleted_list, buttons, check_out, container, rich_text, and task, which are essential for the app's functionality and user interface.
 
-This project is a starting point for a Flutter application.
+Second Screen:
+Widgets included in Screen 2: Bulleted_list, buttons, check_out, container, rich_text, and task.
+Provider: Used to manage the state of completed and incomplete tasks.
+The second screen is accessed by pressing the add button on the first screen.
+Includes an AlertDialog box to ensure that all tasks are completed. When all tasks are completed, the AlertDialog box turns green.
 
-A few resources to get you started if this is your first Flutter project:
+Functionality:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+The Provider is used to manage the state of completed and incomplete tasks across the app.
+Navigator is used to navigate between screens. For example, when the checkout button is pressed, it routes back to the previous screen.
+The bulleted_list widget is used to display a list of texts with bullets.
+Buttons are used for various actions, such as pressing the checkout button to navigate to the previous screen.
+The container widget is used for layout and styling purposes.
+Rich_text is used to display formatted text with different styles.
+The task widget represents a task item, which can be completed or incomplete based on user interaction.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Screenshots of the Assignment
+<img src="assets/images/S1.png" width="100" height="210">
+<img src="assets/images/S2.png" width="100" height="210">
+<img src="assets/images/S3.png" width="100" height="210">
+<img src="assets/images/S4.png" width="100" height="210">
+<img src="assets/images/S5.png" width="100" height="210">
