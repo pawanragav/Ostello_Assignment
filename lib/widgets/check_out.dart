@@ -15,8 +15,8 @@ class CheckOut extends StatelessWidget {
             borderRadius: BorderRadius.circular(16),
             border: Border.all(color: Color.fromRGBO(229, 229, 229, 1)),
           ),
-          child: Padding(
-            padding: const EdgeInsets.all(14.0),
+          child: const Padding(
+            padding: EdgeInsets.all(14.0),
             child: RichTextWidgetForCheckOut(
               title: "Double Dhamaka Offer!",
               content:

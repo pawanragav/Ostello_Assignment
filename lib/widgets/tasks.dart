@@ -88,22 +88,22 @@ class _TasksState extends State<Tasks> {
                 children: [
                   CircleAvatar(
                     radius: 15,
-                    backgroundColor: Color.fromRGBO(115, 41, 216, 1),
+                    backgroundColor: const Color.fromRGBO(115, 41, 216, 1),
                     child: Icon(
                         completedList.isNotEmpty && completedList[i]
                             ? Icons.check
                             : Icons.close,
                         color: Colors.white),
                   ), // Shows check icon if task is completed
-                  SizedBox(width: 10),
+                  const SizedBox(width: 10),
                   Expanded(
                     child: Container(
-                      padding: EdgeInsets.symmetric(horizontal: 10),
+                      padding: const EdgeInsets.symmetric(horizontal: 10),
                       child: Text(
                         contents[i],
                         textAlign: TextAlign.left,
                         softWrap: true,
-                        style: TextStyle(
+                        style: const TextStyle(
                             fontSize: 16,
                             height: 1.55,
                             fontFamily: "Avenir",
@@ -111,8 +111,8 @@ class _TasksState extends State<Tasks> {
                       ),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
+                  const Padding(
+                    padding: EdgeInsets.all(8.0),
                     child: Icon(
                       Icons.arrow_forward_ios_rounded,
                       size: 15,
@@ -121,7 +121,7 @@ class _TasksState extends State<Tasks> {
                 ],
               ),
             ),
-            Divider(
+            const Divider(
               endIndent: 10,
               indent: 10,
             ),

@@ -24,9 +24,9 @@ class AakashInstitutePage extends StatelessWidget {
                         height: 120,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(16),
-                          color: Color.fromRGBO(243, 247, 255, 1),
+                          color: const Color.fromRGBO(243, 247, 255, 1),
                         ),
-                        child: ImageIcon(
+                        child: const ImageIcon(
                           AssetImage(
                             "assets/images/shop.png",
                           ),
@@ -38,16 +38,17 @@ class AakashInstitutePage extends StatelessWidget {
                         right: 0,
                         child: CircleAvatar(
                           radius: 20,
-                          backgroundColor: Color.fromRGBO(115, 41, 216, 1),
+                          backgroundColor:
+                              const Color.fromRGBO(115, 41, 216, 1),
                           child: IconButton(
                             alignment: Alignment.center,
                             onPressed: () {
                               Navigator.of(context)
                                   .push(MaterialPageRoute(builder: (ctx) {
-                                return AakashInstitutePage();
+                                return const AakashInstitutePage();
                               }));
                             },
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.add,
                               color: Colors.white,
                             ),
@@ -60,9 +61,9 @@ class AakashInstitutePage extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(top: 50, left: 20),
                   child: RichText(
-                    text: TextSpan(
+                    text: const TextSpan(
                       text: 'Aakash Institute\n\n',
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontFamily: 'Avenir',
                         color: Colors.black,
                         fontSize: 26,
@@ -71,7 +72,7 @@ class AakashInstitutePage extends StatelessWidget {
                       children: [
                         TextSpan(
                           text: "-----------------",
-                          style: const TextStyle(
+                          style: TextStyle(
                             fontFamily: 'Avenir',
                             color: Colors.black,
                             fontWeight: FontWeight.normal,
@@ -87,26 +88,26 @@ class AakashInstitutePage extends StatelessWidget {
             ),
             Column(
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Container(
                   width: MediaQuery.of(context).size.width * .9,
                   decoration: BoxDecoration(
-                    color: Color.fromRGBO(238, 225, 252, 1),
+                    color: const Color.fromRGBO(238, 225, 252, 1),
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(
-                      color: Color.fromRGBO(211, 172, 255, 1),
+                      color: const Color.fromRGBO(211, 172, 255, 1),
                     ),
                   ),
                   child: Column(
                     children: [
-                      SizedBox(height: 15),
+                      const SizedBox(height: 15),
                       Image.asset(
                         'assets/images/icon_1.png',
                         height: 150,
                       ),
-                      Text(
+                      const Text(
                         "Become a Verified OstelloAI\nInstitute!",
                         style: TextStyle(
                             fontFamily: "Avenir",
@@ -114,11 +115,11 @@ class AakashInstitutePage extends StatelessWidget {
                             fontWeight: FontWeight.bold),
                         textAlign: TextAlign.center,
                       ),
-                      SizedBox(height: 10),
-                      RichTextWidget(title: "₹3500", content: "/year"),
-                      SizedBox(height: 10),
-                      MyContainer(),
-                      BulletedList(),
+                      const SizedBox(height: 10),
+                      const RichTextWidget(title: "₹3500", content: "/year"),
+                      const SizedBox(height: 10),
+                      const MyContainer(),
+                      const BulletedList(),
                       Padding(
                         padding: const EdgeInsets.symmetric(
                             horizontal: 20, vertical: 20),
@@ -128,7 +129,7 @@ class AakashInstitutePage extends StatelessWidget {
                     ],
                   ),
                 ),
-                TaskContainer(),
+                const TaskContainer(),
               ],
             ),
           ],

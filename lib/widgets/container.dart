@@ -20,11 +20,11 @@ class MyContainer extends StatelessWidget {
             alignment: Alignment.center,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
-              color: Color.fromRGBO(228, 210, 248, 1),
+              color: const Color.fromRGBO(228, 210, 248, 1),
             ),
-            child: RichTextWidgetForContainer(
+            child: const RichTextWidgetForContainer(
                 title: "₹2500\n", content: "Charges to verify")),
-        SizedBox(
+        const SizedBox(
           width: 8,
         ),
         Container(
@@ -33,9 +33,9 @@ class MyContainer extends StatelessWidget {
             alignment: Alignment.center,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
-              color: Color.fromRGBO(228, 210, 248, 1),
+              color: const Color.fromRGBO(228, 210, 248, 1),
             ),
-            child: RichTextWidgetForContainer(
+            child: const RichTextWidgetForContainer(
                 title: "₹1000\n", content: "In Your wallet")),
       ],
     );
@@ -49,7 +49,7 @@ class TaskContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SizedBox(
+        const SizedBox(
           height: 20,
         ),
         Container(
@@ -57,7 +57,7 @@ class TaskContainer extends StatelessWidget {
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(16),
-            border: Border.all(color: Color.fromRGBO(229, 229, 229, 1)),
+            border: Border.all(color: const Color.fromRGBO(229, 229, 229, 1)),
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -72,17 +72,17 @@ class TaskContainer extends StatelessWidget {
                         alignment: Alignment.center, // Adjust padding as needed
                         decoration: BoxDecoration(
                           border: Border.all(
-                              color: Color.fromRGBO(0, 213, 102, 1),
+                              color: const Color.fromRGBO(0, 213, 102, 1),
                               style: BorderStyle.solid,
                               width: 7), // Border properties
                           borderRadius: BorderRadius.circular(50),
                         ),
-                        child: Text(
+                        child: const Text(
                           "😥",
                           style: TextStyle(fontSize: 19),
                         )),
-                    Padding(
-                      padding: const EdgeInsets.all(10.0),
+                    const Padding(
+                      padding: EdgeInsets.all(10.0),
                       child: RichTextWidgetForTask(
                           title: "100% Profile Completed!\n",
                           content: "5 of 5 tasks complete"),
@@ -90,8 +90,8 @@ class TaskContainer extends StatelessWidget {
                   ],
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(left: 20),
+              const Padding(
+                padding: EdgeInsets.only(left: 20),
                 child: Text(
                   'Use this personalized guide to get your\ncoaching centre up and running!',
                   style: TextStyle(
@@ -99,14 +99,14 @@ class TaskContainer extends StatelessWidget {
                   ),
                 ),
               ),
-              Tasks(),
+              const Tasks(),
             ],
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 20,
         ),
-        CheckOut(),
+        const CheckOut(),
       ],
     );
   }
